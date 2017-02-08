@@ -36,8 +36,8 @@ public class MultiStreamingPubTest {
 							public void onMessage(Message msg) {
 								counter.increment();
 								if (counter.value() % 10 == 0) {
-									System.out.println(
-											"received: topic=streaming/" + topicSuffix + ",count=" + counter.value());
+									System.out.println("received: topic=streaming/" + topicSuffix
+											+ ",received message it count=" + counter.value());
 								}
 							}
 						});
